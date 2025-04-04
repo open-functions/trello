@@ -1,0 +1,33 @@
+{
+    "name": "open-functions/trello",
+    "description": "The Trello Open Function package integrates Trello with large language models (LLMs) using the Open Functions architecture, enabling streamlined repository management and file operations.",
+    "homepage": "https://github.com/open-functions/trello",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weigang",
+            "email": "florian@assistant-engine.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "open-functions/open-functions": "dev-main",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenFunctions\\Tools\\Trello\\": "src/"
+        }
+    },
+    "require-dev": {
+        "filament/filament": "^3.3"
+    }
+}
